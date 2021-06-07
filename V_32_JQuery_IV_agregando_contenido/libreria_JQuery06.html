@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hola Alumnos</title>
+<style>
+
+    .micontenedor{
+
+        background-color:#0F0;
+    }
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+
+    function validar(){
+
+    var n_usuario=document.getElementById("usuario").value;
+
+        if(n_usuario==""){
+
+            $("#usuario").after("Rellena este campo por favor");
+        }
+    }
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<form action="" method="get">
+
+<input name="" type="text" id="usuario"><br/>
+
+<input name="" type="text" id="nombre"><br/>
+
+<input name="" type="text" id="apellido"><br/>
+
+<input type="button" value="Dale" onClick="validar()">
+
+
+</form>
+
+</body>
+</html>

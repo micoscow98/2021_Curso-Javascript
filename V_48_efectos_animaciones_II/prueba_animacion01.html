@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+
+img{
+	opacity:0.5;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+	$("img").mouseover(function(){
+
+		$(this).animate(
+			{
+				opacity:1
+
+			},250
+		);
+	})
+
+	$("img").mouseout(function(){
+
+		$(this).animate(
+			{
+				opacity:0.5
+
+			},250
+		);
+	})
+});
+
+
+</script>
+</head>
+
+<body>
+<img src="imgs/1.jpg" width="300" height="200" id="imagen">
+
+</body>
+</html>

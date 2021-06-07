@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+
+<script>
+
+    var aleatorio=Math.round(Math.random()*100); /*metodo que devuelve numero aleatorio entre 0 y 1 y
+                              lo multiplico por 100 y da entre 1 y 100* y round lo redondea a entero*/
+
+    var minum, intentos;
+
+    minum=0;
+
+    intentos=0;
+
+    do{
+
+        minum=prompt("Introduce un n° entre 0 y 100");
+
+        if(aleatorio>minum){
+
+            document.write("Más alto" + "</br>");
+            //alert("Más alto");
+        }
+
+        if(aleatorio<minum){
+
+            document.write("Más bajo" + "</br>");
+            //alert("Más bajo");
+        }
+        intentos++;
+
+    }while(aleatorio!=minum);
+
+    document.write("Correcto Has consumido: ", + intentos + " intentos");
+
+   //alert("Correcto Hasconsumido: ", + intentos + " intentos");
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+
+<script>
+
+    function suma(num1, num2){
+
+        alert("la suma es : " + (num1+num2));
+    }   
+
+    function resta(num1, num2){
+
+        alert("la resta es : " + (num1-num2));
+    }  
+
+    function multiplica(num1, num2){
+
+        alert("la multiplicacion es : " + (num1*num2));
+    }  
+
+    function divide(num1, num2){
+
+        alert("la division es : " + (num1/num2));
+    }  
+
+    var operacion=prompt("Que operación deseas realizar?");
+
+    var operador1=parseInt(prompt("Introduce el primer número"));
+
+    var operador2=parseInt(prompt("Introduce el segundo número"));
+
+    if(operacion=="sumar"){
+
+        suma(operador1, operador2);
+    }
+    else if(operacion=="restar"){
+
+        resta(operador1, operador2);
+    }
+    else if(operacion=="multiplicar"){
+
+        multiplica(operador1, operador2);
+    }
+    else if(operacion=="dividir"){
+
+        divide(operador1, operador2);
+    }
+
+    else{
+
+        alert("Lo siento. Operación no contemplada");
+    }
+
+</script>
+
+</head>
+
+<body >
+
+
+
+
+
+</body>
+</html>

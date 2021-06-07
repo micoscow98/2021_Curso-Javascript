@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin titulo</title>
+
+
+
+</head>
+
+<body>
+
+<table width="25%" border="0">
+    <tr>
+        <td><label for="textfield"></label>
+        <input type="text" name="textfield" id="c_mensaje"</td>
+        <td><label for="textfield2"></label>
+        <input type="text" name="textfield2" id="c_intentos"</td>
+    </tr>
+</table>
+
+<script>
+
+    var aleatorio=Math.round(Math.random()*100); /*metodo que devuelve numero aleatorio entre 0 y 1 y
+                              lo multiplico por 100 y da entre 1 y 100* y round lo redondea a entero*/
+
+    var minum, intentos;
+
+    minum=0;
+
+    intentos=0;
+
+    var mensaje=document.getElementById("c_mensaje");
+
+    var intentos_consumidos=document.getElementById("c_intentos");
+
+    do{
+
+        minum=prompt("Introduce un n° entre 0 y 100");
+
+        if(aleatorio>minum){
+
+            mensaje.value="Más alto";
+
+            mensaje.style.fontSize="18px";
+            
+        }
+
+        if(aleatorio<minum){
+
+            mensaje.value="Más bajo";
+            
+            mensaje.style.fontSize="18px";
+        }
+        intentos++;
+
+        intentos_consumidos.value=intentos;
+
+        intentos_consumidos.style.fontSize="18px";
+
+        intentos_consumidos.style.color="red";
+
+        intentos_consumidos.style.textAlign="center";
+
+    }while(aleatorio!=minum);
+
+    mensaje.value="Correcto";
+
+    mensaje.style.color="red";
+
+   
+
+</script>
+
+</body>
+</html>
